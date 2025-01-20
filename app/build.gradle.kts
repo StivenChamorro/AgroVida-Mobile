@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.agrovida"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.agrovida"
@@ -59,6 +59,30 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    //splash screen
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
+    //navegacion
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+
+    //efectos de animacion y estilo
+    implementation ("androidx.compose.material3:material3:1.1.2")
+    implementation ("androidx.compose.runtime:runtime:1.5.4")
+    implementation ("androidx.compose.animation:animation:1.5.4")
+
+    //Iconos extendidos
+    implementation("androidx.compose.material:material-icons-extended:1.5.0")
+    implementation(libs.androidx.navigation.runtime.ktx)
+
+    //graficos de barras
+    implementation ("com.patrykandpatrick.vico:compose:1.6.5")
+    implementation ("com.patrykandpatrick.vico:compose-m3:1.6.5")
+    implementation ("com.patrykandpatrick.vico:core:1.6.5")
+    implementation(libs.androidx.navigation.compose)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
